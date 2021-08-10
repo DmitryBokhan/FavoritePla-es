@@ -161,6 +161,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        
 
         /*
          * Package Service Providers...
@@ -174,6 +175,12 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        
+        /*
+         * Добавил управление ролями пользователей, подробнее по ссылке:
+         * https://spatie.be/docs/laravel-permission/v4/installation-laravel
+         */
+        Spatie\Permission\PermissionServiceProvider::class,
 
     ],
 
