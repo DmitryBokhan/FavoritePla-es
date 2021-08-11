@@ -16,4 +16,22 @@ $(document).ready(function () {
          return false;
       }
    });
+
+
+   //Инициализация duallistbox для выбора категорий поста 
+   //https://github.com/istvan-ujjmeszaros/bootstrap-duallistbox#readme
+   $("#bootstrap-duallistbox-nonselected-list_category").bootstrapDualListbox({
+      // see next for specifications
+      iconMove: 'oi-arrow-thick-righ',
+      nonSelectedListLabel: 'Доступные категории',
+      selectedListLabel: 'Выбраные категории',
+      infoText: false,
+      filterPlaceHolder: 'Фильтр',
+      showFilterInputs: false,
+      iconsPrefix: 'fas',
+      iconMove: "fa-angle-double-right",
+      iconRemove: "fas fa-angle-double-left",
+
+
+   });
 })
