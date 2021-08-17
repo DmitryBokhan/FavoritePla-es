@@ -32,8 +32,10 @@ Route::middleware(['role:admin|moderator'])->prefix('admin_panel')->group(functi
     Route::resources(['category' => CategoryController::class]);
     Route::resources(['post' => PostController::class]);
 
+    
 });
 
+Route::post('/upload', [PostController::class, 'uploadfile']);
 
 
 
